@@ -8,31 +8,151 @@ Border: rgb(173, 218, 211);
 */
 
 /*Font:
-Header-----> font-family: 'Fredoka One', cursive;
-Text-----> font-family: 'Roboto', sans-serif;
+font-family: 'Orienta', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
 */
 
-body{
-    background-color: rgb(236, 255,251);
+/*------------------------ ------------------------ ------------------------*/
+#dateInput{
+    padding-top: 90px;
+    background-color: rgb(132, 217,210);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+#dateInput img{
+    max-width: 175px;
+    height: auto;
+    padding: 20px 40px;
+}
+
+body {
+    background-color:rgb(234, 252, 255);
+    font-family: "Roboto";
+    color: lightgray;
+    padding-bottom: 65px;
+}
+
+h1{
+    font-size: 15px; 
 }
 
 #navbar {
-    background-color: rgb(132, 217,210);
+    background-color:rgb(219, 219, 219);
     font-family: "Roboto";
-    font-size: 20px;
-    font-weight: 5px;
+    color:white;
+}
+
+#texts {
+    color: white;
 }
 
 #navbar a{
     display:block;
     color: rgb(255, 255, 255);
+    
     border-radius: 5%;
     text-decoration: none;
 }
 
 #navbar a:hover {
-    background-color: rgb(115, 214, 206);
+    background-color: rgb(23, 162, 184);
 }
 
+#countDown{
+    background: rgb(184, 184, 184);
+    border: 5px solid rgb(156, 155, 155);
+    border-radius: 5%;
+    margin-top: 30px;
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: center;
+}
 
-/*------------------------ ------------------------ ------------------------*/
+#countDown h4{
+    font-family: 'Open Sans';
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+}
+
+#countDown p{
+    font-family: 'PT Sans';
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(245, 245, 245);
+}
+
+/*------------------------ Health Declaration ------------------------*/
+#healthInfo{
+    border: 5px solid rgb(156, 155, 155);
+    border-radius: 5%;
+    margin-top: 30px;
+    padding-top: 10px;
+    text-align: center;
+    vertical-align: center;
+}
+
+#healthInfo h4{
+    font-family: 'Open Sans';
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+}
+
+#healthInfo p{
+    font-family: 'PT Sans';
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+}
+
+/*------------------------ goalCard ------------------------*/
+
+#goalCard{}
+
+.daysLeft{
+    color: rgb(61, 156, 61);
+}
+/*------------------------ Health Declaration ------------------------*/
+
+#dec{
+    color:black;
+}
+
+#confirm{
+    margin: 30px;
+}
+
+#confirm li{
+    font-family:"Open Sans";
+    font-size: 17px;
+    font-weight: bold;
+    color: gray;
+}
+
+.confirm-page-vars{
+    color: black;
+}
+
+#confirmButton{
+    padding-left: 200px;
+}
+
+#foodInformation{
+    padding-top: 10px;
+}
+
+#success{
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 120px;
+}
+
+#success p{
+    font-family: 18px;
+}
+

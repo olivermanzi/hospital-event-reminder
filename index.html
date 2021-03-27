@@ -16,37 +16,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- google font api-->
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Orienta|PT+Sans" rel="stylesheet">
 
+    <!-- js -->
+    <script type="text/javascript" src="../js/script.js"></script>
 </head>
 
 <body>
-
-    <main class="container-fluid">
+    <div class="container-fluid" id="dateInput">
         <div class="row">
-            <div class="col-12">
-                <button type="button" class="btn btn-secondary btn-lg btn-block">Date</button>
+            <div class="col-4 offset-2">
+                <img src="img/hospital.gif">
             </div>
-            <div class="col-12">
-                <button type="button" class="btn btn-secondary btn-lg btn-block">Food</button>
+            <div class="col-8 offset-2">
+                <div class="search-form">
+                    <div class="input-group mb-3">
+                        <input id="day" placeholder="Day" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input id="month" placeholder="Month" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input id="year" placeholder="Year" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
             </div>
-            <div class="col-12">
-                <button type="button" class="btn btn-secondary btn-lg btn-block">Health</button>
-            </div>
-            <div class="col-12">
-                <button type="button" class="btn btn-secondary btn-lg btn-block">Documentation</button>
-            </div>
-            <div class="col-12"></div>
-        </div>
-    </main>
 
-    <!-- Navbar -->
-    <div class="navbar fixed-bottom container-fluid" id="navbar">
-        <a class="nav-link active" href="preOp.html">Pre-Op</a>
-        <a class="nav-link" href="op.html">Op</a>
-        <a class="nav-link" href="postOp.html">Post-OP</a>
-        <a class="nav-link" href="calendar.html">Calendar</a>
-    </div>
+            <div class="col-2 offset-3">
+                <a href="html/during.html">
+                    <button type="button" class="btn btn-primary btn-lg" onclick="getDateSurgery();">Get Started</button>
+                </a>
+            </div>
+        </div>
+        <!-- js -->
+        <script type="text/javascript">
+        $(document).ready(function () {
+            getDateSurgery();
+        });
+    </script>
 </body>
 
 </html>

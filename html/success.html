@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css -->
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+
+    <!-- bootstrap api -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+
+    <!--google font api-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Orienta|PT+Sans" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-10 offset-1">
+            <div id="success">
+                <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header">
+                        <h4>Declaration Complete</h4>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 18px;">Congratulations. You have completed the declaration form. All that is left now is to follow the guidelines
+                            in the dashboard!
+                            <hr>Good Luck!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar fixed-bottom container-fluid" id="navbar">
+        <a class="nav-link" href="../html/during.html">
+            <img id="navIcon" src="../img/health.png">
+        </a>
+        <a class="nav-link" href="../html/declaration.html">
+            <img id="navIcon" src="../img/declaration.png">
+        </a>
+        <a class="nav-link" href="../index.html">
+            <img id="navIcon" src="../img/restart.png">
+        </a>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            printDecFormVariables();
+        });
+    </script>
+
+</body>
+
+</html>
